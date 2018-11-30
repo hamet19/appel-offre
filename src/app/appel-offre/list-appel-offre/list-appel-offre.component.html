@@ -1,0 +1,147 @@
+<!--nwes start -->
+<section id="blog" class="news">
+    <div class="container">
+        <div class="news-details">
+            <div class="section-header text-center">
+                <h2>Marchées Publiées</h2>
+
+            </div>
+            <!--/.section-header-->
+            <div class="news-card news-card-pb-25">
+                <div class="row">
+                    <div class="col-md-4 col-sm-6" *ngFor="let item of itemArray">
+                        <div class="single-news-box">
+                            <div class="news-box-bg">
+                                <img src="{{item.image}}" alt="blog image">
+                                <div class="isotope-overlay">
+                                    <a href="blog_single.html">
+                                        <span class="lnr lnr-link"></span>
+
+                                    </a>
+                                </div>
+
+                            </div>
+                            <!--/.team-box-bg-->
+                            <div class="news-box-inner">
+                                <h3>
+                                    <a href="blog_single.html">
+                                         Categorie: {{item.secteur}}
+                                        </a>
+                                </h3>
+                                <h3>
+                                    <a href="blog_single.html">
+                                              Objet :{{item.description}}
+                                            </a>
+                                </h3>
+                                <h3>
+                                    <a href="blog_single.html">
+                                            Reference : {{item.title}}
+                                                </a>
+                                </h3>
+                                <p class="news-meta">
+                                    Publié le :{{item.date_creation}}
+                                </p>
+                                <p class="news-meta">
+                                    Date Limite :{{item.date_limite}}
+                                </p>
+
+
+                                <button class="uk-button uk-button-primary" href="#modal-sections" uk-toggle>Postuler</button>
+
+                                <div id="modal-sections" uk-modal>
+                                    <div class="uk-modal-dialog">
+                                        <button class="uk-modal-close-default" type="button" uk-close></button>
+                                        <div class="uk-modal-header">
+                                            <h2 class="uk-modal-title"></h2>
+                                        </div>
+                                        <form class="uk-form-stacked">
+                                            <div class="form">
+                                                <div class="uk-margin">
+                                                    <label>Reference</label>
+                                                    <input type="text " class="form-control " name="title" [(ngModel)]="donne.title">
+                                                </div>
+                                                <div class="uk-margin">
+                                                    <label>Nom</label>
+                                                    <input type="text " class="form-control " placeholder="Entrer le Nom de l'Entreprise" name="nom" [(ngModel)]="donne.nom">
+                                                </div>
+                                                <div class="uk-margin">
+                                                    <label>Address :</label>
+                                                    <input type="text " class="form-control " placeholder="Entrer l'address de l'entreprise" name="address" [(ngModel)]="donne.address">
+                                                </div>
+                                                <div class="uk-margin">
+                                                    <label>Numero Immatriculation</label>
+                                                    <input type="text " class="form-control " placeholder="Entrer Numero d'imatriculation" name="matricule" [(ngModel)]="donne.matricule">
+                                                </div>
+                                                <div class="uk-margin">
+                                                    <label> Numero Ninea</label>
+                                                    <input type="text " class="form-control " placeholder="Entrer Numero niena" name="ninea" [(ngModel)]="donne.ninea">
+                                                </div>
+                                                <div class="uk-margin">
+                                                    <label>Capitale de L'entreprise</label>
+                                                    <input type="text " class="form-control " placeholder="Entrer le Capitale de l'entreprise" name="capitale" [(ngModel)]="donne.capitale">
+                                                </div>
+                                                <div class="uk-margin">
+                                                    <label>Nombre d'Employé</label>
+                                                    <input type="text " class="form-control " placeholder="Entrer le Nombre d'employe" name="employe" [(ngModel)]="donne.employe">
+                                                </div>
+                                                <div class="uk-margin">
+                                                    <label>Image Url</label>
+                                                    <input type="text " class="form-control " placeholder="Entrer l'image de Url de l'Entreprise" name="image" [(ngModel)]="donne.image">
+                                                </div>
+                                                <div class="uk-modal-footer uk-text-right">
+                                                    <button class="uk-button uk-button-default " type="button">Cancel</button>
+                                                    <button class="uk-button uk-button-primary uk-modal-close " type="button" (click)="insertEntreprise()">Save</button>
+                                                </div>
+                                            </div>
+
+                                        </form>
+
+
+
+
+                                    </div>
+                                </div>
+
+
+                                <button class="uk-button uk-button-secondary" href="#modal-sections">detail</button>
+
+                                <!-- <a href="#" class="learn-btn">
+                                        learn more
+                                    </a> -->
+                            </div>
+
+
+
+
+
+                        </div>
+                        <!--/.news-box-inner-->
+
+
+                        <!--/.single-news-box-->
+                    </div>
+                    <!--.col-->
+
+                    <!--.col-->
+
+                    <!--.col-->
+                </div>
+
+
+                <!--/.row-->
+
+                <!--/.project-btn-->
+            </div>
+
+            <!--/.news-card-->
+
+
+        </div>
+        <!--/news-details-->
+    </div>
+    <!--/.container-->
+
+</section>
+<!--/news-->
+<!--news end-->
+<!--nwes start -->

@@ -1,0 +1,25 @@
+<!-- small modal -->
+<div class="modal fade bs-example-modal-sm" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel">
+    <div class="modal-dialog modal-sm" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                     <span aria-hidden="true">
+                       <i class="fa fa-close"></i>
+                     </span>
+                   </button>
+                <h4 class="modal-title" id="mySmallModalLabel">
+                    Sign In
+                </h4>
+                <form class="sm-frm" style="padding:25px">
+                    <label>Email :</label>
+                    <input type="text" class="form-control" placeholder="Enter Email de l'Entreprise" name="email" [(ngModel)]="email">
+                    <label>Passoward :</label>
+                    <input type="password" class="form-control" placeholder="Enter Passoward" name="password" [(ngModel)]="password">
+                    <label><input type="checkbox" name="personality"> Remenber Me</label>
+                    <button type="button" class="btn btn-default pull-right" data-dismiss="modal" (click)="login()">Submit</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>

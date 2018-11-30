@@ -1,0 +1,72 @@
+<!--nwes start -->
+<section id="blog" class="news">
+    <div class="container">
+        <div class="news-details">
+            <div class="section-header text-center">
+                <h2>Entreprises Postules</h2>
+            </div>
+            <!--/.section-header-->
+            <div class="news-card news-card-pb-25">
+                <div class="row">
+                    <div class="col-md-4 col-sm-6" *ngFor="let item of itemArray">
+                        <div class="single-news-box">
+                            <div class="news-box-bg">
+                                <img src="{{item.image}}" alt="blog image">
+                                <div class="isotope-overlay">
+                                    <a href="blog_single.html">
+                                        <span class="lnr lnr-link"></span>
+
+                                    </a>
+                                </div>
+
+                            </div>
+                            <!--/.team-box-bg-->
+                            <div class="news-box-inner">
+                                <h3>
+                                    <a href="blog_single.html">
+                                            Nom de l'entreprise: {{item.nom}}
+                                            </a>
+                                </h3>
+                                <h3>
+                                    <a href="blog_single.html">
+                                                Reference de l'appel Postules: {{item.title}}
+                                                </a>
+                                </h3>
+                                <h3>
+                                    <a href="blog_single.html">
+                                                    l'Address de l'entreprise: {{item.address}}
+                                                    </a>
+                                </h3>
+
+                            </div>
+
+                            <!--/.news-box-inner-->
+                        </div>
+
+                        <!--/.single-news-box-->
+                    </div>
+                    <!--.col-->
+
+                    <!--.col-->
+
+                    <!--.col-->
+                </div>
+
+
+                <!--/.row-->
+
+                <!--/.project-btn-->
+            </div>
+
+            <!--/.news-card-->
+
+
+        </div>
+        <!--/news-details-->
+    </div>
+    <!--/.container-->
+
+</section>
+<!--/news-->
+<!--news end-->
+<!--nwes start -->

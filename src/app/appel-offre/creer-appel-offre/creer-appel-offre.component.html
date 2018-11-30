@@ -1,0 +1,50 @@
+<section id="creer" class="about-us">
+    <div class="container">
+        <div class="about-us-content">
+            <div class="row">
+                <div class="col-sm-6">
+                    <div class="single-about-us">
+                        <div class="about-us-txt">
+                            <h2>Presenter un appel d'offre</h2>
+                            <p>
+                                Vueiller remplir les champs de formulaire
+                            </p>
+
+                            <!--/.project-btn-->
+                        </div>
+                        <!--/.about-us-txt-->
+                    </div>
+                    <!--/.single-about-us-->
+                </div>
+                <!--/.col-->
+                <div class="col-sm-6 header-right pull-right">
+                    <form class="lg-frm " style=" padding:25px ">
+                        <label>Reference :</label>
+                        <input type="text " class="form-control " placeholder="Entrer Numero reference" name="title" [(ngModel)]="data.title">
+                        <label>Secteur d'Activite:</label>
+                        <input type="text" class="form-control" placeholder="Entrer le secteur d'activite de l'appel" name="secteur" [(ngModel)]="data.secteur">
+                        <label>objet :</label>
+                        <textarea type="text" class="form-control" placeholder="decrire l'appel" name="description" [(ngModel)]="data.description"></textarea>
+                        <label>Autorité contractante:</label>
+                        <input type="text" class="form-control" placeholder="Autorité a Contacter" name="autorite" [(ngModel)]="data.autorite">
+                        <label>Date de Publication :</label>
+                        <input type="date" class="form-control" placeholder="Enter date de publication " name="date_creation" [(ngModel)]="data.date_creation">
+                        <label>Date limite :</label>
+                        <input type="date" class="form-control" placeholder="Entrer la date limite " name="date_limite" [(ngModel)]="data.date_limite">
+                        <label>Image :</label>
+                        <input type="text" class="form-control" placeholder="Enter la date limite " name="image" [(ngModel)]="data.image">
+
+                        <button type="button" class="btn btn-default pull-right" (click)="insertOffre()">Submit</button>
+                    </form>
+                    <!--/.single-about-us-->
+                </div>
+                <!--/.col-->
+            </div>
+            <!--/.row-->
+        </div>
+        <!--/.about-us-content-->
+    </div>
+    <!--/.container-->
+
+</section>
+<!--/.about-us-->
